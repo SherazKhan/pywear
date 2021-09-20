@@ -30,7 +30,7 @@ jobs:
       # Base
 
       - name: Build base image
-        run: docker build  ./docker -t pywear:0.1
+        run: docker build  ./docker -t pywear:latest
         
       - name: List docker images
         run: docker images
