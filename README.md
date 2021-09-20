@@ -10,9 +10,11 @@ Project Organization
     │
     ├── README.md          <- The top-level README for developers using this project.
     │
+    ├── docker             <- Docker files    
+    │
     ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
     │
-    ├── examples           <- examples to demonstrate functionality. 
+    ├── examples           <- Examples to demonstrate functionality. 
     │
     ├── models             <- Trained and serialized models, model predictions, or model summaries
     │
