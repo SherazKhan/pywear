@@ -30,9 +30,4 @@ jobs:
       # Base
 
       - name: Build base image
-        run: docker-compose build base
-    
-      - name: System info - base image
-        run: docker run SherazKhan/pywear python -c "import pywear; pywear.sys_info()"
-
-      
+        run: docker build  ./docker -t pywear:0.1
