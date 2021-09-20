@@ -1,6 +1,6 @@
 pywear
 ==============================
-![Tests](https://github.com/SherazKhan/pywear/actions/workflows/tests.yml/badge.svg) ![Docker](https://github.com/SherazKhan/pywear/actions/workflows/docker.yml/badge.svg)
+![Tests](https://github.com/SherazKhan/pywear/actions/workflows/tests.yml/badge.svg) 
 
 Python package for exploring, visualizing, and analyzing human activity data
 
