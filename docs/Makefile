@@ -52,7 +52,7 @@ html_dev-pattern:
 
 install: html
 	rm -rf _build/doctrees _build/pywear.github.io
-	git clone -b gh-pages --single-branch --no-checkout --depth 1 https://github.com/neurobooth/pywear _build/pywear.github.io
+	git clone -b gh-pages --single-branch --no-checkout --depth 1 https://github.com/sherazkhan/pywear _build/pywear.github.io
 	touch _build/pywear.github.io/.nojekyll
 	cd _build/ && \
 	cp -r html/* pywear.github.io && \

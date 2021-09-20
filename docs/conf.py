@@ -12,13 +12,15 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
+
 # import os
 # import sys
-# # sys.path.insert(0, os.path.abspath('.'))
-# import sphinx_gallery
-# from sphinx_gallery.sorting import ExampleTitleSortKey, ExplicitOrder
+# sys.path.insert(0, os.path.abspath('.'))
 
-# import sphinx_bootstrap_theme
+# import sphinx_gallery
+from sphinx_gallery.sorting import ExampleTitleSortKey, ExplicitOrder
+
+import sphinx_bootstrap_theme
 
 
 # -- Project information -----------------------------------------------------
@@ -43,7 +45,7 @@ release = ''
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx_gallery.gen_gallery',
+    #'sphinx_gallery.gen_gallery',
     'sphinx.ext.viewcode',
     'sphinx.ext.autosummary',
     'sphinx.ext.autodoc',
@@ -199,17 +201,17 @@ if 'dev' in version:
 else:
     filepath_prefix = 'v{}'.format(version)
 
-sphinx_gallery_conf = {
-    'doc_module': 'pywear',
-    # path to your examples scripts
-    'examples_dirs': '../examples',
-    # path where to save gallery generated examples
-    'gallery_dirs': 'auto_examples',
-    'backreferences_dir': 'generated',
-    'reference_url': {
-        'pywear': None
-    },
-    'within_subsection_order': ExampleTitleSortKey,
-    'subsection_order': ExplicitOrder(['../examples/workflows/',
-                                       '../examples/howto/'])
-}
+# sphinx_gallery_conf = {
+#     'doc_module': 'pywear',
+#     # path to your examples scripts
+#     'examples_dirs': '../examples',
+#     # path where to save gallery generated examples
+#     'gallery_dirs': 'auto_examples',
+#     'backreferences_dir': 'generated',
+#     'reference_url': {
+#         'pywear': None
+#     },
+#     'within_subsection_order': ExampleTitleSortKey,
+#     'subsection_order': ExplicitOrder(['../examples/workflows/',
+#                                        '../examples/howto/'])
+# }

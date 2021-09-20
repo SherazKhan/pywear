@@ -6,7 +6,7 @@ Python package for exploring, visualizing, and analyzing human activity data
 Project Organization
 ------------
     ├── .github            <- Work flows for CI/CD
-    │   └── workflows      <- Yamls files for testing
+    │   └── workflows      <- Yamls files for testing and Docker
     │
     ├── README.md          <- The top-level README for developers using this project.
     │
