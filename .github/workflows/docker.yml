@@ -25,9 +25,18 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
-          password: ${{ secrets.PAT }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       # Base
 
       - name: Build base image
         run: docker build  ./docker -t pywear:0.1
+        
+      - name: List docker images
+        run: docker images
+
+      - name: Rename base image tag for release
+        run: docker tag sherazkhan/pywear ghcr.io/sherazkhan/pywear
+
+      - name: Push base image to github
+        run: docker push ghcr.io/sherazkhan/pywear:latest
